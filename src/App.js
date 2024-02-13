@@ -1,10 +1,20 @@
-import Nav from './components/Nav';
 import './App.css';
+import { Routes, Route, Outlet, Link } from "react-router-dom";
+import Layout from './components/Layout';
+import Mens from './components/Mens';
 
 function App() {
+
+
   return (
     <div className="App">
-<Nav/>
+
+      <Routes>
+        <Route path="/" element={<Layout />}> </Route>
+        <Route path="/mens" element={<Mens />}> </Route>
+      </Routes>
+
+
     </div>
   );
 }

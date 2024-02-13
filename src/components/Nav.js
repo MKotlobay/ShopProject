@@ -28,7 +28,7 @@ function Nav() {
 
             <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#949494' }}>
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="/index.html">
+                    <a className="navbar-brand" href="/">
                         <img
                             src="https://www.511tactical.com/static/version1673368652/frontend/511/default/en_US/images/511-logo-on-light-2x.png"
                             alt="Always be ready." width="150"
@@ -44,7 +44,7 @@ function Nav() {
                                 <a className="nav-link active" href="https://www.511tactical.com/new.html">NEW</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="https://www.511tactical.com/mens.html">MEN'S</a>
+                                <a className="nav-link active" href="/src/components/Mens.js">MEN'S</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link active" href="https://www.511tactical.com/womens.html">WOMEN'S</a>
