@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 
 function Nav() {
     return (
@@ -44,13 +45,25 @@ function Nav() {
                                 <a className="nav-link active" href="https://www.511tactical.com/new.html">NEW</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="/src/components/Mens.js">MEN'S</a>
+                                <NavLink
+                                    to="/mens"
+                                    className="nav-link active">
+                                    MEN'S
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="https://www.511tactical.com/womens.html">WOMEN'S</a>
+                                <NavLink
+                                    to="/womens"
+                                    className="nav-link active">
+                                    WOMEN'S
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="https://www.511tactical.com/bags-packs.html">BAGS & PACKS</a>
+                                <NavLink
+                                    to="/bags-packs"
+                                    className="nav-link active">
+                                    BAGS & PACKS
+                                </NavLink>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link active" href="https://www.511tactical.com/footwear.html">FOOTWEAR</a>

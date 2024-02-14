@@ -1,0 +1,14 @@
+.battle {
+    position: relative;
+}
+
+.battle div {
+    position: absolute;
+    top: 11%;
+    left: 12%;
+    z-index: 2;
+}
+
+.t-shadow {
+    text-shadow: #F8862C 1px 0 10px;
+}

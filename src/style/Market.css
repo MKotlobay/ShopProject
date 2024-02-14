@@ -1,14 +1,14 @@
-.mens-container {
+.market-container {
     position: relative;
     width: 100%;
 }
 
-.mens-content {
+.market-content {
     position: relative;
     z-index: 1;
 }
 
-.mens-background {
+.market-background {
     position: absolute;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@
     opacity: 0.5;
 }
 
-.mens-title {
+.market-title {
     position: absolute;
     top: 50%;
     left: 50%;
