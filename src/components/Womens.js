@@ -4,15 +4,9 @@ import '../style/Market.css';
 import Footer from './Footer';
 import AltNav from './AltNav';
 
-function Womens() {
-    const [products, setProducts] = useState([]);
+function Womens(props) {
+    const { products } = props
 
-    useEffect(() => {
-        fetch('/women.json')
-            .then(response => response.json())
-            .then(data => setProducts(data.women))
-    }, []);
-    
     return (
         <div className="market-container">
             <Nav />
@@ -22,9 +16,9 @@ function Womens() {
             <br />
             <div className="container pt-5">
                 <div className="row">
-                    {products.map(product => (
+                    {products && products.map(product => (
                         <div key={product.id} className="col-md-4">
-                            <div className="card h-100 d-flex flex-column p-5">
+                            <div className="product-card h-100 d-flex flex-column p-5">
                                 <img src={product.thumbnail} className="card-img-top" alt={product.title} />
                                 <div className="flex-grow-1 d-flex flex-column justify-content-between">
                                     <div>

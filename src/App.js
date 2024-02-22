@@ -4,18 +4,33 @@ import Layout from './components/Layout';
 import Mens from './components/Mens';
 import Womens from './components/Womens';
 import BagsPacks from './components/BagsPacks';
+import { useEffect, useState } from 'react';
+
 
 function App() {
+  const [products, setProducts] = useState([]); // add to cart that check that !
+  const [cartProducts, setCartProducts] = useState([])
 
+  useEffect(() => {
+    fetch('/products.json')
+      .then(response => response.json())
+      .then(data => setProducts(data))
+  }, []);
+
+  const onButtonAdd = (id) => {
+    const newProducts = [...cartProducts, id]
+    setCartProducts(newProducts)
+    localStorage.setItem('cartProducts', JSON.stringify([...cartProducts, id]))
+  }
 
   return (
     <div className="App">
 
       <Routes>
         <Route path="/" element={<Layout />}> </Route>
-        <Route path="/mens" element={<Mens />}> </Route>
-        <Route path="/womens" element={<Womens />}> </Route>
-        <Route path="/bags-packs" element={<BagsPacks />}> </Route>
+        <Route path="/mens" element={<Mens products={products.men} addCart={onButtonAdd}/>}> </Route>
+        <Route path="/womens" element={<Womens products={products.women} addCart={onButtonAdd}/>}> </Route>
+        <Route path="/bags-packs" element={<BagsPacks products={products.bagsPacks} addCart={onButtonAdd}/>}> </Route>
       </Routes>
 
     </div>

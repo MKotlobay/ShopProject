@@ -4,14 +4,8 @@ import '../style/Market.css';
 import Footer from './Footer';
 import AltNav from './AltNav';
 
-function Mens() {
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        fetch('/men.json')
-            .then(response => response.json())
-            .then(data => setProducts(data.men))
-    }, []);
+function Mens(props) {
+    const { products, addCart } = props
 
     return (
         <div className="market-container">
@@ -22,9 +16,9 @@ function Mens() {
             <br />
             <div className="container pt-5">
                 <div className="row">
-                    {products.map(product => (
+                    {products && products.map(product => (
                         <div key={product.id} className="col-md-4">
-                            <div className="card h-100 d-flex flex-column p-5">
+                            <div className="product-card h-100 d-flex flex-column p-5">
                                 <img src={product.thumbnail} className="card-img-top" alt={product.title} />
                                 <div className="flex-grow-1 d-flex flex-column justify-content-between">
                                     <div>
@@ -33,7 +27,7 @@ function Mens() {
                                     </div>
                                     <div className="text-center">
                                         <p className="card-text">${product.price}</p>
-                                        <button className="btn rounded-0" style={{ backgroundColor: '#F8862C' }}>ADD TO CART</button>
+                                        <button className="btn rounded-0" style={{ backgroundColor: '#F8862C' }} onClick={() => addCart(product.id)}>ADD TO CART</button>
                                     </div>
                                 </div>
                             </div>

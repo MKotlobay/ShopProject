@@ -4,15 +4,8 @@ import '../style/Market.css';
 import Footer from './Footer';
 import AltNav from './AltNav';
 
-function BagsPacks() {
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        fetch('/bagsPacks.json')
-            .then(response => response.json())
-            .then(data => setProducts(data.bagsPacks))
-    }, []);
-
+function BagsPacks(props) {
+    const {products} = props
 
     return (
         <div className="market-container">
@@ -23,9 +16,9 @@ function BagsPacks() {
             <br />
             <div className="container pt-5">
                 <div className="row">
-                    {products.map(product => (
+                    {products && products.map(product => (
                         <div key={product.id} className="col-md-4">
-                            <div className="card h-100 d-flex flex-column p-5">
+                            <div className="product-card h-100 d-flex flex-column p-5">
                                 <img src={product.thumbnail} className="card-img-top" alt={product.title} />
                                 <div className="flex-grow-1 d-flex flex-column justify-content-between">
                                     <div>

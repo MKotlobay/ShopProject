@@ -1,0 +1,199 @@
+{
+    "men": [
+        {
+            "id": 1001,
+            "title": "JIMMY KNIT SHIRT",
+            "description": "When you need a shirt that's ready for work and the weekend.",
+            "price": 48,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/41294_095_JIMMY_KNIT_SS_SHIRT_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 1002,
+            "title": "CEPHEUS SOFTSHELL PANT",
+            "description": "If you’re headed to the backcountry, or just to the local range, you need clothes that won’t bind or slow you down. Our Cepheus Softshell Pant keeps pace with any adventuring lifestyle.",
+            "price": 98,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/4/3/43064_1012_cepheus_softshell_pant_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 1003,
+            "title": "ROSSER JACKET",
+            "description": "Selecting the right utility jacket has always been a headache until now.",
+            "price": 98,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/78058_975_ROSSER_JACKET_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 1004,
+            "title": "DYLAN REVERSIBLE PRIMALOFT® SHIRT JACKET",
+            "description": "The Dylan Reversible PrimaLoft® Shirt Jacket epitomizes adaptability.",
+            "price": 155,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/78050_160_DYLAN_REV_SHIRT_JACKET_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 1005,
+            "title": "ADVENTURE PRIMALOFT® INSULATED JACKET",
+            "description": "This packable jacket crams warmth and convenience into its own stuff sack.",
+            "price": 130,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/78057_1012_ADVENTURE_PRIMALOFT_JACKET_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 1006,
+            "title": "WYATT SHORT SLEEVE SHIRT",
+            "description": "The Wyatt Short Sleeve Shirt is our way of taking a collared, button-up shirt and giving it the 5.11 treatment.",
+            "price": 48,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/71203_344_WYATT_SS_SHIRT_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 1007,
+            "title": "DEFENDER-FLEX SLIM JEAN",
+            "description": "Whether it's a weekend in the backcountry or a night out on the town, the Defender-Flex Jean rolls with you.",
+            "price": 85,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/7/4/74465_1022_defenderflexslimjean_01_2_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 1008,
+            "title": "ELLIS SHORT SLEEVE SHIRT",
+            "description": "Our Ellis Short Sleeve Shirt line looks as good tucked into slacks as it does untucked with jeans.",
+            "price": 58,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/71207_975_ELLIS_SS_SHIRT_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 1009,
+            "title": "KUMAU REVERSIBLE JACKET",
+            "description": "Classic bomber jacket style meets 5.11® function in our new Kumau Reversible Jacket.",
+            "price": 83,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/78059_019_KUMAU_REVERSIBLE_JACKET_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        }
+    ],
+
+    "women": [
+        {
+            "id": 2001,
+            "title": "PT-R MAX EFFORT LEGGING",
+            "description": "Embrace the grind with the PT-R Max Effort Tight. This high-performance training tight features a durable nylon and elastane jersey construction enhanced with a moisture-wicking and anti-odor finish..",
+            "price": 58,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/6/7/67018_1081_pt-r_max_effort_tight_01_5.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=300&width=240"
+        },
+        {
+            "id": 2002,
+            "title": "DONNA HOODIE",
+            "description": "The Donna Hoodie, a part of 5.11 Tactical®'s high-performance gear collection, is a perfect fusion of comfort, utility, and style.",
+            "price": 58,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/62125_1012_DONNA_HOODIE_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=300&width=240"
+        },
+        {
+            "id": 2003,
+            "title": "WOMEN'S RAPID PDU® CLD LONG SLEEVE SHIRT",
+            "description": "The Rapid PDU® Shirt is one of the most popular in our lineup and that performance is enhanced for winter in the Rapid PDU® CLD Long Sleeve Shirt.",
+            "price": 130,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/32165_750_WM_PDU_CLD_RAPID_LS_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 2004,
+            "title": "JANET SHORT SLEEVE SHIRT",
+            "description": "Feminine lines with Enduro-Flex™ properties for the woman on a mission.",
+            "price": 42,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/61337_1073_JANET_SS_SHIRT_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 2005,
+            "title": "LOUISE SHIRT JACKET",
+            "description": "Don’t let the classic looks fool you. Our Louise Shirt Jacket is built on a solid foundation of modern performance and functionality.",
+            "price": 98,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/38085_1044_LOUISE_SHIRT_JACKET_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 2006,
+            "title": "WOMEN'S PERFORMANCE LONG SLEEVE POLO",
+            "description": "We call it the Women's Performance Polo, but honestly, that's an understatement.",
+            "price": 52,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/62408_092_WM_PERFORMANCE_POLO_LS_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 2007,
+            "title": "ISLA SHORT SLEEVE SHIRT",
+            "description": "The Isla Short Sleeve Shirt is proof that tactical can also be feminine.",
+            "price": 50,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/6/1/61330_837_islashirt_02_5.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 2008,
+            "title": "PT-R MAX EFFORT CROP",
+            "description": "Go all out with the PT-R Max Effort Crop. Built for hardcore training, this crop top features a durable nylon body enhanced with elastane jersey for stretch.",
+            "price": 46,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/66024_961_PTR_MAX_EFFORT_CROP_01_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 2009,
+            "title": "PT-R CATALYST LONG SLEEVE",
+            "description": "Designed to be comfortable and tough, the PT-R Women's Catalyst Long Sleeve is the perfect first layer on a cold day or a lightweight workout shirt for hitting the gym.",
+            "price": 42,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/6/6/66023_831_pt-r_wm_catalyst_ls_01_5.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        }
+    ],
+
+    "bagsPacks": [
+        {
+            "id": 3001,
+            "title": "RUSH® 24 2.0 MULTICAM® BACKPACK 37L",
+            "description": "The RUSH® 24 2.0 Backpack 37L is a versatile and reliable backpack designed for modern adventurers seeking the perfect combination of ample storage, durability, and functionality.",
+            "price": 180,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/5/6/56564_169_rush24-2point0_multicam_02.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 3002,
+            "title": "RUSH® LBD LIMA 56L",
+            "description": "Built to haul heavy loads like armor and equipment our RUSH® LBD (Load Bearing Duffels) are made from durable 1050D nylon, with webbing and heavy-duty bar-tacking reinforcements throughout.",
+            "price": 130,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/5/6/56294_186_01_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 3003,
+            "title": "RUSH® 100 BACKPACK 60L",
+            "description": "The RUSH® 100 Backpack 60L is designed for those who require a heavy-duty deployment bag with versatility and adaptability.",
+            "price": 255,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/5/6/56555_186_rush100_05.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 3004,
+            "title": "ALL HAZARDS PRIME BACKPACK 29L",
+            "description": "The All Hazards Prime is meaner than your average bag.",
+            "price": 205,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/t/a/tactical_small_56997_019_01_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 3005,
+            "title": "UCR SLING PACK 14L",
+            "description": "The UCR Slingpack is made to keep your gear organized and at hand and designed to provide first responders and professionals with a carry-all solution, this ergonomic right shoulder carry bag is built from tear-resistant 1050D nylon and has a ton of features.",
+            "price": 135,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/5/6/56298_019_03.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 3006,
+            "title": "RUSH® MOAB™ 10 SLING PACK 18L",
+            "description": "Part of the RUSH® Backpack series, the MOAB™ 10 is fully ambidextrous, high-performance sling pack loaded with tactical CCW utility.",
+            "price": 105,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/5/6/56964_134_01_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 3007,
+            "title": "RUSH® MOAB™ 6 SLING PACK 11L",
+            "description": "ntroducing the RUSH® MOAB™ 6 Sling Pack, an 11-liter, fully ambidextrous high-performance tactical solution for both daily use and operations.",
+            "price": 80,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/5/6/56963_134_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 3008,
+            "title": "LOAD UP 22 CARRY ON 45L",
+            "description": "Traveling with your EDC gear doesn’t have to be complicated. At least not with our Load Up 22 Carry On.",
+            "price": 205,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/56435/186/56435_186_small.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 3009,
+            "title": "MISSION READY™ 3.0 90L",
+            "description": "Outstanding durability, flexibility and value make the Mission Ready 3.0 rolling duffel a must have.",
+            "price": 285,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/5/6/56477_134_small.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        }
+    ]
+}
