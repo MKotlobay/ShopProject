@@ -1,23 +1,48 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Nav from './Nav';
 import '../style/Market.css';
 import Footer from './Footer';
+import AltNav from './AltNav';
 
 function BagsPacks() {
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        fetch('/bagsPacks.json')
+            .then(response => response.json())
+            .then(data => setProducts(data.bagsPacks))
+    }, []);
+
+
     return (
         <div className="market-container">
             <Nav />
-            <div className="market-content">
-                <h1 className="market-title">TACTICAL BAGS & PACKS</h1>
-                <img
-                    className="market-background"
-                    src="https://www.511tactical.com/static/version1707847711/frontend/511/default/en_US/images/category-title-banner-desk-2x.png"
-                    alt="Always be ready." />
+            <AltNav title="TACTICAL BAGS & PACKS" /> {/* image size have problems + remove br */}
+            <br />
+            <br />
+            <br />
+            <div className="container pt-5">
+                <div className="row">
+                    {products.map(product => (
+                        <div key={product.id} className="col-md-4">
+                            <div className="card h-100 d-flex flex-column p-5">
+                                <img src={product.thumbnail} className="card-img-top" alt={product.title} />
+                                <div className="flex-grow-1 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 className="card-title">{product.title}</h5>
+                                        <p className="card-text">{product.description}</p>
+                                    </div>
+                                    <div className="text-center">
+                                        <p className="card-text">${product.price}</p>
+                                        <button className="btn rounded-0" style={{ backgroundColor: '#F8862C' }}>ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
-            <div>
-                <h2>XXX</h2>
-            </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }

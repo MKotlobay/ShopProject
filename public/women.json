@@ -1,0 +1,67 @@
+{
+    "women": [
+        {
+            "id": 1,
+            "title": "PT-R MAX EFFORT LEGGING",
+            "description": "Embrace the grind with the PT-R Max Effort Tight. This high-performance training tight features a durable nylon and elastane jersey construction enhanced with a moisture-wicking and anti-odor finish..",
+            "price": 58,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/6/7/67018_1081_pt-r_max_effort_tight_01_5.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=300&width=240"
+        },
+        {
+            "id": 2,
+            "title": "DONNA HOODIE",
+            "description": "The Donna Hoodie, a part of 5.11 Tactical®'s high-performance gear collection, is a perfect fusion of comfort, utility, and style.",
+            "price": 58,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/62125_1012_DONNA_HOODIE_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=300&width=240"
+        },
+        {
+            "id": 3,
+            "title": "WOMEN'S RAPID PDU® CLD LONG SLEEVE SHIRT",
+            "description": "The Rapid PDU® Shirt is one of the most popular in our lineup and that performance is enhanced for winter in the Rapid PDU® CLD Long Sleeve Shirt.",
+            "price": 130,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/32165_750_WM_PDU_CLD_RAPID_LS_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 4,
+            "title": "JANET SHORT SLEEVE SHIRT",
+            "description": "Feminine lines with Enduro-Flex™ properties for the woman on a mission.",
+            "price": 42,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/61337_1073_JANET_SS_SHIRT_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 5,
+            "title": "LOUISE SHIRT JACKET",
+            "description": "Don’t let the classic looks fool you. Our Louise Shirt Jacket is built on a solid foundation of modern performance and functionality.",
+            "price": 98,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/38085_1044_LOUISE_SHIRT_JACKET_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 6,
+            "title": "WOMEN'S PERFORMANCE LONG SLEEVE POLO",
+            "description": "We call it the Women's Performance Polo, but honestly, that's an understatement.",
+            "price": 52,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/62408_092_WM_PERFORMANCE_POLO_LS_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 7,
+            "title": "ISLA SHORT SLEEVE SHIRT",
+            "description": "The Isla Short Sleeve Shirt is proof that tactical can also be feminine.",
+            "price": 50,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/6/1/61330_837_islashirt_02_5.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 8,
+            "title": "PT-R MAX EFFORT CROP",
+            "description": "Go all out with the PT-R Max Effort Crop. Built for hardcore training, this crop top features a durable nylon body enhanced with elastane jersey for stretch.",
+            "price": 46,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/66024_961_PTR_MAX_EFFORT_CROP_01_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        },
+        {
+            "id": 9,
+            "title": "PT-R CATALYST LONG SLEEVE",
+            "description": "Designed to be comfortable and tough, the PT-R Women's Catalyst Long Sleeve is the perfect first layer on a cold day or a lightweight workout shirt for hitting the gym.",
+            "price": 42,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/6/6/66023_831_pt-r_wm_catalyst_ls_01_5.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+        }
+    ]
+}
