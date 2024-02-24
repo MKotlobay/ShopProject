@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 import '../style/Cart.css'
 
 
-function Nav() {
+function Nav(props) {
+    const { totalProducts } = props;
 
-    const [totalProducts, setTotalProducts] = useState(0);
     const [basket, setBasket] = useState([]);
     const [sideCartVisible, setSideCartVisible] = useState(false); // State to manage side cart visibility
 

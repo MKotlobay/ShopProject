@@ -5,6 +5,7 @@ import Mens from './components/Mens';
 import Womens from './components/Womens';
 import BagsPacks from './components/BagsPacks';
 import { useEffect, useState } from 'react';
+import Nav from './components/Nav';
 
 
 function App() {
@@ -17,6 +18,12 @@ function App() {
       .then(data => setProducts(data))
   }, []);
 
+  // Cart
+  useEffect(() => {
+    const storedCartProducts = JSON.parse(localStorage.getItem('cartProducts')) || [];
+    setCartProducts(storedCartProducts);
+  }, []);
+
   const onButtonAdd = (id) => {
     const newProducts = [...cartProducts, id]
     setCartProducts(newProducts)
@@ -25,12 +32,12 @@ function App() {
 
   return (
     <div className="App">
-
+      <Nav totalProducts={cartProducts.length}/>
       <Routes>
         <Route path="/" element={<Layout />}> </Route>
-        <Route path="/mens" element={<Mens products={products.men} addCart={onButtonAdd}/>}> </Route>
-        <Route path="/womens" element={<Womens products={products.women} addCart={onButtonAdd}/>}> </Route>
-        <Route path="/bags-packs" element={<BagsPacks products={products.bagsPacks} addCart={onButtonAdd}/>}> </Route>
+        <Route path="/mens" element={<Mens products={products.men} addCart={onButtonAdd} />}> </Route>
+        <Route path="/womens" element={<Womens products={products.women} addCart={onButtonAdd} />}> </Route>
+        <Route path="/bags-packs" element={<BagsPacks products={products.bagsPacks} addCart={onButtonAdd} />}> </Route>
       </Routes>
 
     </div>

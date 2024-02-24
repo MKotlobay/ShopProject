@@ -8,7 +8,6 @@ import Footer from './Footer';
 function Layout() {
     return (
         <div>
-            <Nav />
             <Banner />
             <Quote />
             <GridLayout/>

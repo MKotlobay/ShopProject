@@ -9,7 +9,6 @@ function Mens(props) {
 
     return (
         <div className="market-container">
-            <Nav />
             <AltNav title="MEN'S TACTICAL CLOTHING" /> {/* image size have problems + remove br */}
             <br />
             <br />
