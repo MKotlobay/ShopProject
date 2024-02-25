@@ -4,50 +4,14 @@ import '../style/Cart.css'
 
 
 function Nav(props) {
-    const { totalProducts } = props;
+    const { totalProducts, newCardCart } = props;
 
-    const [basket, setBasket] = useState([]);
     const [sideCartVisible, setSideCartVisible] = useState(false); // State to manage side cart visibility
-
-    // Function to calculate and display the total number of products in the cart
-    // const showTotalProducts = () => {
-    //     if (basket.length === 0) {
-    //         setTotalProducts(0);
-    //         return;
-    //     }
-    //     const total = basket.reduce((acc, item) => acc + item.qty, 0);
-    //     setTotalProducts(total);
-    // };
-
-    // useEffect(() => {
-    //     showTotalProducts();
-    // }, [basket]);
 
     // Function to toggle side cart visibility
     const toggleSideCart = () => {
         setSideCartVisible(!sideCartVisible);
     };
-
-    // Function to add a product to the cart
-    // const handleAddToCartClick = (productId) => {
-    //     const product = products.find((product) => product.id === productId);
-
-    //     if (product) {
-    //         // The product does not exist in the cart yet
-    //         if (!basket.find(el => el.id === product.id)) {
-    //             const newProduct = { ...product, qty: 1 };
-    //             setBasket([...basket, newProduct]);
-    //         }
-    //         // The product already exists, only quantity needs to be updated
-    //         else {
-    //             const updatedBasket = basket.map((item) =>
-    //                 item.id === productId ? { ...item, qty: item.qty + 1 } : item
-    //             );
-    //             setBasket(updatedBasket);
-    //         }
-    //     }
-    // };
-
 
 
     return (
@@ -73,7 +37,6 @@ function Nav(props) {
                     </div>
                 </div>
             </nav>
-
 
             <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#949494' }}>
                 <div className="container-fluid">
@@ -130,6 +93,7 @@ function Nav(props) {
                         </ul>
 
 
+                        {/* Side cart */}
                         <span id="totalProducts">{totalProducts}</span>
                         <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#949494' }}>
                             <div id="shoppingCart">
@@ -139,10 +103,12 @@ function Nav(props) {
                                     </button>
                                 </a>
                                 <div id="sideCart" className={sideCartVisible ? "visible" : "hidden"}>
-                                    <div className="cart-total-products"></div>
-                                    <div className="cart-total-price"></div>
                                     <button id="clearCartButton" className="btn btn-danger mx-auto my-1 w-50">Clear Cart</button>
+                                    <div>
+                                        {newCardCart}
+                                    </div>
                                 </div>
+
                             </div>
                         </nav>
 

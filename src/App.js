@@ -9,8 +9,9 @@ import Nav from './components/Nav';
 
 
 function App() {
-  const [products, setProducts] = useState([]); // add to cart that check that !
+  const [products, setProducts] = useState([]);
   const [cartProducts, setCartProducts] = useState([])
+  const [newCardCart, setNewCardCart] = useState([]);
 
   useEffect(() => {
     fetch('/products.json')
@@ -24,22 +25,29 @@ function App() {
     setCartProducts(storedCartProducts);
   }, []);
 
+  // Array for localstorage
   const onButtonAdd = (id) => {
     const newProducts = [...cartProducts, id]
     setCartProducts(newProducts)
     localStorage.setItem('cartProducts', JSON.stringify([...cartProducts, id]))
   }
 
+  // Array for appearing products at cart - Not saves
+  const onButtonCardCart = (product) => {
+    const updatedCardCart = [...newCardCart, product];
+    setNewCardCart(updatedCardCart);
+  }
+
+
   return (
     <div className="App">
-      <Nav totalProducts={cartProducts.length}/>
+      <Nav totalProducts={cartProducts.length} newCardCart={newCardCart} />
       <Routes>
         <Route path="/" element={<Layout />}> </Route>
-        <Route path="/mens" element={<Mens products={products.men} addCart={onButtonAdd} />}> </Route>
-        <Route path="/womens" element={<Womens products={products.women} addCart={onButtonAdd} />}> </Route>
-        <Route path="/bags-packs" element={<BagsPacks products={products.bagsPacks} addCart={onButtonAdd} />}> </Route>
+        <Route path="/mens" element={<Mens products={products.men} addCart={onButtonAdd} cardAppear={onButtonCardCart} />}> </Route>
+        <Route path="/womens" element={<Womens products={products.women} addCart={onButtonAdd} cardAppear={onButtonCardCart} />}> </Route>
+        <Route path="/bags-packs" element={<BagsPacks products={products.bagsPacks} addCart={onButtonAdd} cardAppear={onButtonCardCart} />}> </Route>
       </Routes>
-
     </div>
   );
 }
