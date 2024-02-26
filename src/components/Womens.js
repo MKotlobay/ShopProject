@@ -4,7 +4,7 @@ import Footer from './Footer';
 import AltNav from './AltNav';
 
 function Womens(props) {
-    const { products, addCart, cardAppear } = props
+    const { products, addCart } = props
 
     return (
         <div className="market-container">
@@ -25,7 +25,7 @@ function Womens(props) {
                                     </div>
                                     <div className="text-center">
                                         <p className="card-text">${product.price}</p>
-                                        <button className="btn rounded-0" style={{ backgroundColor: '#F8862C' }} onClick={() => { addCart(product.id); cardAppear(product.title); }}>ADD TO CART</button>
+                                        <button className="btn rounded-0" style={{ backgroundColor: '#F8862C' }} onClick={() => { addCart(product) }}>ADD TO CART</button>
                                     </div>
                                 </div>
                             </div>
