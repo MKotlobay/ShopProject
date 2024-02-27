@@ -23,18 +23,14 @@ function Nav(props) {
         setTotalProducts(totalQuantity);
     }, [cartProducts]);
 
-    const updateProductQuantity = (productId, quantity) => {
-        // Update the quantity in the state
-        setProductQuantities(prevState => ({
-            ...prevState,
-            [productId]: quantity
-        }));
-
-        // Update the quantity in the cartProducts array
+    const updateCartProductQuantity = (productId, newQuantity) => {
+        // Update the quantity of the product in the cartProducts array
         const updatedCartProducts = cartProducts.map(product =>
-            product.id === productId ? { ...product, quantity } : product
+            product.id === productId ? { ...product, quantity: newQuantity } : product
         );
-        updateCartProducts(updatedCartProducts);
+        setCartProducts(updatedCartProducts);
+        // Update local storage
+        localStorage.setItem('cartProducts', JSON.stringify(updatedCartProducts));
     };
 
     useEffect(() => {
@@ -65,8 +61,6 @@ function Nav(props) {
         });
         setTotalPrice(totalPrice);
     }, [cartProducts]);
-    
-
 
     return (
         <>
@@ -156,17 +150,17 @@ function Nav(props) {
                                     </button>
                                 </a>
                                 <div id="sideCart" className={sideCartVisible ? "visible" : "hidden"}>
-                                <p>Total Price: ${totalPrice.toFixed(2)}</p>
+                                    <p className='d-flex justify-content-center'>Total Price: ${totalPrice.toFixed(2)}</p>
                                     <button id="clearSideCartButton" className="btn btn-danger mx-auto my-1 w-50" onClick={clearCart}>Clear Cart</button>
-                                    <div>
+                                    <div className='d-flex flex-column justify-content-center align-items-center'>
                                         {cartProducts.map(product => (
                                             <div key={product.id}>
-                                                <p>{product.title}</p>
+                                                <p className='pt-4'>{product.title}</p>
                                                 <img src={product.thumbnail} alt={product.title} />
                                                 <ProductQty
                                                     productId={product.id}
-                                                    quantity={productQuantities[product.id] || 1}
-                                                    updateProductQuantity={updateProductQuantity}
+                                                    quantity={product.quantity || 1}
+                                                    updateProductQuantity={(quantity) => updateCartProductQuantity(product.id, quantity)}
                                                 />
                                             </div>
                                         ))}

@@ -28,7 +28,6 @@ function App() {
   // Array for localstorage
   const onButtonAdd = (product) => {
     const existingProduct = cartProducts.find((item) => item.id === product.id);
-
     if (existingProduct) {
       // If the product already exists in the cart, increase its quantity by 1
       const updatedCartProducts = cartProducts.map((item) =>

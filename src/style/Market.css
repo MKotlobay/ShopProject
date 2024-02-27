@@ -6,6 +6,7 @@
 .market-content {
     position: relative;
     z-index: 1;
+    height: 50px;
 }
 
 .market-background {

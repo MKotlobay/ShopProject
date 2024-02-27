@@ -8,10 +8,7 @@ function BagsPacks(props) {
 
     return (
         <div className="market-container">
-            <AltNav title="TACTICAL BAGS & PACKS" /> {/* image size have problems + remove br */}
-            <br />
-            <br />
-            <br />
+            <AltNav title="TACTICAL BAGS & PACKS" />
             <div className="container pt-5">
                 <div className="row">
                     {products && products.map(product => (
