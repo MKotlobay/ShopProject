@@ -5,10 +5,9 @@ import ProductQty from './ProductQty';
 
 
 function Nav(props) {
-    const { cartProducts, updateCartProducts, setCartProducts } = props;
+    const { cartProducts, setCartProducts } = props;
 
     const [sideCartVisible, setSideCartVisible] = useState(false); // State to manage side cart visibility
-    const [productQuantities, setProductQuantities] = useState({});
     const [totalProducts, setTotalProducts] = useState(0);
     const [totalPrice, setTotalPrice] = useState(0);
 
@@ -32,15 +31,6 @@ function Nav(props) {
         // Update local storage
         localStorage.setItem('cartProducts', JSON.stringify(updatedCartProducts));
     };
-
-    useEffect(() => {
-        // Initialize product quantities from cartProducts
-        const initialQuantities = {};
-        cartProducts.forEach(product => {
-            initialQuantities[product.id] = product.quantity || 1;
-        });
-        setProductQuantities(initialQuantities);
-    }, [cartProducts]);
 
 
     const clearCart = () => {
