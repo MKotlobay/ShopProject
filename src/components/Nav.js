@@ -141,10 +141,10 @@ function Nav(props) {
                         </ul>
 
                         {/* Side cart */}
-                        <span id="totalProducts">{totalProducts}</span>
+                        <span id="totalProducts" style={{color:'#f04a23'}}>{totalProducts}</span>
                         <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#949494' }}>
                             <div id="shoppingCart">
-                                <a style={{ paddingLeft: '10px', paddingRight: '10px' }} href="#">
+                                <a >
                                     <button className="btn" id="cartButton" onClick={toggleSideCart}>
                                         <i className="fa-solid fa-cart-shopping" style={{ color: '#f8862c' }}></i>
                                     </button>
@@ -168,7 +168,15 @@ function Nav(props) {
                                 </div>
                             </div>
                         </nav>
-
+                        <div>
+                            <button className="btn">
+                                <NavLink
+                                    to="/favorite-products"
+                                    className="nav-link active" style={{ color: '#f8862c' }}>
+                                    <i className="fa-sharp fa-solid fa-bookmark"/>
+                                </NavLink>
+                            </button>
+                        </div>
                         <form className="d-flex" role="search">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                             <button className="btn rounded-0" style={{ color: '#F8862C', outlineStyle: 'solid', outlineWidth: '1px' }}

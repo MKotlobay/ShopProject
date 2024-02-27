@@ -4,7 +4,11 @@ import Footer from './Footer';
 import AltNav from './AltNav';
 
 function BagsPacks(props) {
-    const { products, addCart } = props
+    const { products, addCart, addFavorite } = props
+
+    const addToFavorites = (product) => {
+        addFavorite(product);
+    };
 
     return (
         <div className="market-container">
@@ -23,6 +27,7 @@ function BagsPacks(props) {
                                     <div className="text-center">
                                         <p className="card-text">${product.price}</p>
                                         <button className="btn rounded-0" style={{ backgroundColor: '#F8862C' }} onClick={() => { addCart(product) }}>ADD TO CART</button>
+                                        <button className="btn " onClick={() => addToFavorites(product)}> <i className="fa-sharp fa-solid fa-bookmark" style={{ color: '#f8862c' }} /> </button>
                                     </div>
                                 </div>
                             </div>

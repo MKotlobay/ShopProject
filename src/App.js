@@ -6,12 +6,15 @@ import Womens from './components/Womens';
 import BagsPacks from './components/BagsPacks';
 import { useEffect, useState } from 'react';
 import Nav from './components/Nav';
+import FavoriteProducts from './components/FavoriteProducts';
 
 
 function App() {
   const [products, setProducts] = useState([]);
-  const [cartProducts, setCartProducts] = useState([])
+  const [cartProducts, setCartProducts] = useState([]);
+  const [favoriteProducts, setFavoriteProducts] = useState([]);
 
+  // Json
   useEffect(() => {
     fetch('/products.json')
       .then(response => response.json())
@@ -24,6 +27,11 @@ function App() {
     setCartProducts(storedCartProducts);
   }, []);
 
+  // Favorite
+  useEffect(() => {
+    const storedFavoriteProducts = JSON.parse(localStorage.getItem('favoriteProducts')) || [];
+    setFavoriteProducts(storedFavoriteProducts);
+  }, []);
 
   // Array for localstorage
   const onButtonAdd = (product) => {
@@ -44,15 +52,28 @@ function App() {
   };
 
 
+  const onFavoriteAdd = (product) => {
+    const existingProduct = favoriteProducts.find((item) => item.id === product.id);
+    if (existingProduct) {
+      // If the product already exists in favorites, do nothing
+      return;
+    } else {
+      // If the product is not in favorites, add it
+      const newFavorite = [...favoriteProducts, { ...product }];
+      setFavoriteProducts(newFavorite);
+      localStorage.setItem('favoriteProducts', JSON.stringify(newFavorite));
+    }
+  };
 
   return (
     <div className="App">
       <Nav totalProducts={cartProducts.length} cartProducts={cartProducts} setCartProducts={setCartProducts} />
       <Routes>
         <Route path="/" element={<Layout />}> </Route>
-        <Route path="/mens" element={<Mens products={products.men} addCart={onButtonAdd} />}> </Route>
-        <Route path="/womens" element={<Womens products={products.women} addCart={onButtonAdd} />}> </Route>
-        <Route path="/bags-packs" element={<BagsPacks products={products.bagsPacks} addCart={onButtonAdd} />}> </Route>
+        <Route path="/mens" element={<Mens products={products.men} addCart={onButtonAdd} addFavorite={onFavoriteAdd} />}> </Route>
+        <Route path="/womens" element={<Womens products={products.women} addCart={onButtonAdd} addFavorite={onFavoriteAdd} />}> </Route>
+        <Route path="/bags-packs" element={<BagsPacks products={products.bagsPacks} addCart={onButtonAdd} addFavorite={onFavoriteAdd} />}> </Route>
+        <Route path="/favorite-products" element={<FavoriteProducts />}> </Route>
       </Routes>
     </div>
   );
