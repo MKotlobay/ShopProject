@@ -7,7 +7,7 @@ function GridLayout() {
             <div className="row row-cols-1 row-cols-md-3 g-4 p-5">
                 <div className="col">
                     <div className="card">
-                        <a href="/new-arrivals.html">
+                        <a href="https://www.511tactical.com/new.html">
                             <img src="https://www.511tactical.com/media/gene-cms/homepage/2211/10_Tile_AllNew.jpg" className="card-img-top" alt="NEW ARRIVALS" />
                         </a>
                         <button type="button" className="btn rounded-0" style={{ backgroundColor: '#F8862C' }}>NEW ARRIVALS</button>
@@ -15,7 +15,7 @@ function GridLayout() {
                 </div>
                 <div className="col">
                     <div className="card">
-                        <a href="https://www.511tactical.com/mens.html">
+                        <a href="/mens">
                             <img src="https://www.511tactical.com/media/gene-cms/homepage/2211/01_Tile_MensNewArrival.jpg" className="card-img-top" alt="MEN'S" />
                         </a>
                         <button type="button" className="btn rounded-0" style={{ backgroundColor: '#F8862C' }}>MEN'S</button>
@@ -23,7 +23,7 @@ function GridLayout() {
                 </div>
                 <div className="col">
                     <div className="card">
-                        <a href="https://www.511tactical.com/womens.html">
+                        <a href="/womens">
                             <img src="https://www.511tactical.com/media/gene-cms/homepage/2211/01_Tile_WomensNewArrival.jpg" className="card-img-top" alt="WOMEN'S" />
                         </a>
                         <button type="button" className="btn rounded-0" style={{ backgroundColor: '#F8862C' }}>WOMEN'S</button>
@@ -31,7 +31,7 @@ function GridLayout() {
                 </div>
                 <div className="col">
                     <div className="card">
-                        <a href="https://www.511tactical.com/bags-packs.html">
+                        <a href="/bags-packs">
                             <img src="https://www.511tactical.com/media/gene-cms/homepage/2211/01_Tile_Bags_Packs.jpg" className="card-img-top" alt="BAGS & PACKS" />
                         </a>
                         <button type="button" className="btn rounded-0" style={{ backgroundColor: '#F8862C' }}>BAGS & PACKS</button>

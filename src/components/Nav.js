@@ -63,13 +63,13 @@ function Nav(props) {
                     <div className="m-auto" id="navbarSupportedContent">
                         <ul className="navbar-nav mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" href="/gift-cards.html">GIFT CARDS</a>
+                                <a className="nav-link active" href="/gift-card">GIFT CARDS</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="/store-locator.html">STORE LOCATOR</a>
+                                <a className="nav-link active" href="/store-locator">STORE LOCATOR</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="/myaccount.html">MY ACCOUNT</a>
+                                <a className="nav-link active" href="/my-account">MY ACCOUNT</a>
                             </li>
                         </ul>
                     </div>

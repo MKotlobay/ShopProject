@@ -7,6 +7,9 @@ import BagsPacks from './components/BagsPacks';
 import { useEffect, useState } from 'react';
 import Nav from './components/Nav';
 import FavoriteProducts from './components/FavoriteProducts';
+import GiftCards from './components/GiftCards';
+import StoreLocator from './components/StoreLocator';
+import MyAccount from './components/MyAccount';
 
 
 function App() {
@@ -65,6 +68,45 @@ function App() {
     }
   };
 
+
+  //#region  31.03.2024 new reducer study
+  // const [articles, setArticles] = useState([])
+
+  // const onAddNewArticle = article => {
+  //   setArticles([...articles, article])
+  // }
+
+  // const onRemoveArticle = (id) => {
+  //   setArticles(articles.filter(article => article.id !== id))
+  // }
+
+  // const onUpdateArticle = (updateArticle) => {
+  //   setArticles (articles.map (article => article.id === updateArticle.id ? updateArticle : article))
+  // }
+
+  // const onRemoveAll = () => {
+  //   setArticles([])
+  // }
+
+  // const articleReducer = (articles, {type, action}) => {
+  //   switch (type){
+  //     case 'Add_ARTICLE':
+  //       return [...articles, article];
+
+  //     case 'REMOVE_ARTICLE':
+  //       return articles.filter(article => article.id !== id)
+
+  //     case 'UPDATE_ARTICLE':
+  //       return articles.map(article => article.id === updateArticle.id ? updateArticle : article);
+
+  //     case 'CLEAR_ALL':
+  //       return []
+  //     default :
+  //       return articles
+  //   }
+  // }
+  //#endregion
+
   return (
     <div className="App">
       <Nav totalProducts={cartProducts.length} cartProducts={cartProducts} setCartProducts={setCartProducts} />
@@ -73,7 +115,10 @@ function App() {
         <Route path="/mens" element={<Mens products={products.men} addCart={onButtonAdd} addFavorite={onFavoriteAdd} />}> </Route>
         <Route path="/womens" element={<Womens products={products.women} addCart={onButtonAdd} addFavorite={onFavoriteAdd} />}> </Route>
         <Route path="/bags-packs" element={<BagsPacks products={products.bagsPacks} addCart={onButtonAdd} addFavorite={onFavoriteAdd} />}> </Route>
-        <Route path="/favorite-products" element={<FavoriteProducts />}> </Route>
+        <Route path="/favorite-products" element={<FavoriteProducts addCart={onButtonAdd}/>}> </Route>
+        <Route path="/gift-card" element={<GiftCards />}> </Route>
+        <Route path="/store-locator" element={<StoreLocator />}> </Route>
+        <Route path="/my-account" element={<MyAccount />}> </Route>
       </Routes>
     </div>
   );
