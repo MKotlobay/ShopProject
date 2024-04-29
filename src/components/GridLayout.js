@@ -1,7 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import '../style/GridLayout.css';
+import Trending from './Trending';
 
 function GridLayout() {
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        fetch('/products.json')
+            .then(response => response.json())
+            .then(data => {
+                const allProducts = [
+                    ...data.men,
+                    ...data.women,
+                    ...data.bagsPacks
+                ];
+                setProducts(allProducts);
+            })
+    }, []);
+
+
     return (
         <>
             <div className="row row-cols-1 row-cols-md-3 g-4 p-5">
@@ -52,6 +69,12 @@ function GridLayout() {
                         </a>
                         <button type="button" className="btn rounded-0" style={{ backgroundColor: '#F8862C' }}>ACCESSORIES</button>
                     </div>
+                </div>
+            </div>
+
+            <div className="row p-5">
+                <div className="col text-center">
+                    <Trending products={products} />
                 </div>
             </div>
 

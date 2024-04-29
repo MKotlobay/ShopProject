@@ -12,3 +12,15 @@
 .t-shadow {
     text-shadow: #F8862C 1px 0 10px;
 }
+
+.trending-img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}

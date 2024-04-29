@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../style/Market.css';
 import Footer from './Footer';
 import AltNav from './AltNav';
+import Trending from './Trending';
 
 function Mens(props) {
     const { products, addCart, addFavorite } = props

@@ -14,6 +14,13 @@ function Banner() {
       <Carousel.Item>
         <img
           className="d-block w-100"
+          src="https://d3m9l0v76dty0.cloudfront.net/system/photos/875181/original/bb95a0325a0db193f80e6ed3472be0be.png?1706779847"
+          alt="Second slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
           src="https://d3m9l0v76dty0.cloudfront.net/system/photos/760637/extra_large/2c8fccf8b0fc39ad295e4e8d42ed5e03.jpg?1671981243"
           alt="Second slide"
         />

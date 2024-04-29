@@ -68,45 +68,6 @@ function App() {
     }
   };
 
-
-  //#region  31.03.2024 new reducer study
-  // const [articles, setArticles] = useState([])
-
-  // const onAddNewArticle = article => {
-  //   setArticles([...articles, article])
-  // }
-
-  // const onRemoveArticle = (id) => {
-  //   setArticles(articles.filter(article => article.id !== id))
-  // }
-
-  // const onUpdateArticle = (updateArticle) => {
-  //   setArticles (articles.map (article => article.id === updateArticle.id ? updateArticle : article))
-  // }
-
-  // const onRemoveAll = () => {
-  //   setArticles([])
-  // }
-
-  // const articleReducer = (articles, {type, action}) => {
-  //   switch (type){
-  //     case 'Add_ARTICLE':
-  //       return [...articles, article];
-
-  //     case 'REMOVE_ARTICLE':
-  //       return articles.filter(article => article.id !== id)
-
-  //     case 'UPDATE_ARTICLE':
-  //       return articles.map(article => article.id === updateArticle.id ? updateArticle : article);
-
-  //     case 'CLEAR_ALL':
-  //       return []
-  //     default :
-  //       return articles
-  //   }
-  // }
-  //#endregion
-
   return (
     <div className="App">
       <Nav totalProducts={cartProducts.length} cartProducts={cartProducts} setCartProducts={setCartProducts} />

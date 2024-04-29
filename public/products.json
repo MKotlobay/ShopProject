@@ -23,24 +23,24 @@
         },
         {
             "id": 1004,
-            "title": "DYLAN REVERSIBLE PRIMALOFT® SHIRT JACKET",
-            "description": "The Dylan Reversible PrimaLoft® Shirt Jacket epitomizes adaptability.",
+            "title": "COLD WEATHER RAPID OPS SHIRT",
+            "description": "The Cold Weather Rapid Ops Shirt provides added warmth and comfort with its bonded fleece upper fabrics and stretch fleece body fabrics.",
             "price": 155,
-            "thumbnail": "https://www.511tactical.com/media/catalog/product/78050_160_DYLAN_REV_SHIRT_JACKET_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/72540_186_COLD_WEATHER_RAPID_OPS_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
         },
         {
             "id": 1005,
-            "title": "ADVENTURE PRIMALOFT® INSULATED JACKET",
-            "description": "This packable jacket crams warmth and convenience into its own stuff sack.",
+            "title": "WYATT PRINT SHORT SLEEVE SHIRT",
+            "description": "The Wyatt is our way of taking a collared, button-up shirt and giving it the 5.11 treatment.",
             "price": 130,
-            "thumbnail": "https://www.511tactical.com/media/catalog/product/78057_1012_ADVENTURE_PRIMALOFT_JACKET_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/71231_1095_WYATT_PRINT_SS_SHIRT_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=300&width=240"
         },
         {
             "id": 1006,
-            "title": "WYATT SHORT SLEEVE SHIRT",
-            "description": "The Wyatt Short Sleeve Shirt is our way of taking a collared, button-up shirt and giving it the 5.11 treatment.",
+            "title": "SULLI UV HOODED LONG SLEEVE",
+            "description": "Combat UV radiation and stay cool doing it with the Sulli UV Hood Long Sleeve shirt",
             "price": 48,
-            "thumbnail": "https://www.511tactical.com/media/catalog/product/71203_344_WYATT_SS_SHIRT_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/42199_1129_SULLI__UV_HOOD_LS_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=300&width=240"
         },
         {
             "id": 1007,
@@ -82,10 +82,10 @@
         },
         {
             "id": 2003,
-            "title": "WOMEN'S RAPID PDU® CLD LONG SLEEVE SHIRT",
-            "description": "The Rapid PDU® Shirt is one of the most popular in our lineup and that performance is enhanced for winter in the Rapid PDU® CLD Long Sleeve Shirt.",
+            "title": "DANVERS JACKET",
+            "description": "Mother Nature can be fickle. When she decides it's time for an unexpected cold front, our Danvers Jacket offers the ideal solution.",
             "price": 130,
-            "thumbnail": "https://www.511tactical.com/media/catalog/product/32165_750_WM_PDU_CLD_RAPID_LS_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/68020_019_DANVERS_JACKET_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
         },
         {
             "id": 2004,
@@ -103,10 +103,10 @@
         },
         {
             "id": 2006,
-            "title": "WOMEN'S PERFORMANCE LONG SLEEVE POLO",
-            "description": "We call it the Women's Performance Polo, but honestly, that's an understatement.",
+            "title": "WOMENS STRATOS 1/4 ZIP",
+            "description": "The Women’s Stratos 1/4 Zip is designed to be a mid-layer for cold temperatures—but with looks this good, you’ll want to wear it on its own.",
             "price": 52,
-            "thumbnail": "https://www.511tactical.com/media/catalog/product/62408_092_WM_PERFORMANCE_POLO_LS_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/6/2/62417_186_wm_stratos_14_zip_01.jpeg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
         },
         {
             "id": 2007,
@@ -134,10 +134,10 @@
     "bagsPacks": [
         {
             "id": 3001,
-            "title": "RUSH® 24 2.0 MULTICAM® BACKPACK 37L",
+            "title": "RUSH® 24 2.0 BACKPACK 37L",
             "description": "The RUSH® 24 2.0 Backpack 37L is a versatile and reliable backpack designed for modern adventurers seeking the perfect combination of ample storage, durability, and functionality.",
             "price": 180,
-            "thumbnail": "https://www.511tactical.com/media/catalog/product/5/6/56564_169_rush24-2point0_multicam_02.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/5/6/56563_186_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=300&width=240"
         },
         {
             "id": 3002,
@@ -183,17 +183,17 @@
         },
         {
             "id": 3008,
-            "title": "LOAD UP 22 CARRY ON 45L",
-            "description": "Traveling with your EDC gear doesn’t have to be complicated. At least not with our Load Up 22 Carry On.",
-            "price": 205,
-            "thumbnail": "https://www.511tactical.com/media/catalog/product/56435/186/56435_186_small.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+            "title": "RUSH® 100 BACKPACK 60L",
+            "description": "The RUSH® 100 Backpack 60L is designed for those who require a heavy-duty deployment bag with versatility and adaptability.",
+            "price": 255,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/5/6/56555_186_rush100_05.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=300&width=240"
         },
         {
             "id": 3009,
-            "title": "MISSION READY™ 3.0 90L",
-            "description": "Outstanding durability, flexibility and value make the Mission Ready 3.0 rolling duffel a must have.",
-            "price": 285,
-            "thumbnail": "https://www.511tactical.com/media/catalog/product/5/6/56477_134_small.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
+            "title": "RAPID DUFFEL SIERRA 29L",
+            "description": "Traditional duffel bags have a habit of surrendering at inopportune moments, precisely why we introduced our tactically styled Rapid Duffel Sierra.",
+            "price": 52,
+            "thumbnail": "https://www.511tactical.com/media/catalog/product/5/6/56570_256_rapidduffelsierra_08_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=240&width=240"
         }
     ]
 }
