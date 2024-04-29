@@ -32,7 +32,6 @@ function Nav(props) {
         localStorage.setItem('cartProducts', JSON.stringify(updatedCartProducts));
     };
 
-
     const clearCart = () => {
         // Clear local storage
         localStorage.removeItem('cartProducts');
@@ -131,7 +130,7 @@ function Nav(props) {
                         </ul>
 
                         {/* Side cart */}
-                        <span id="totalProducts" style={{color:'#f04a23'}}>{totalProducts}</span>
+                        <span id="totalProducts" style={{ color: '#f04a23' }}>{totalProducts}</span>
                         <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#949494' }}>
                             <div id="shoppingCart">
                                 <a >
@@ -163,7 +162,7 @@ function Nav(props) {
                                 <NavLink
                                     to="/favorite-products"
                                     className="nav-link active" style={{ color: '#f8862c' }}>
-                                    <i className="fa-sharp fa-solid fa-bookmark"/>
+                                    <i className="fa-sharp fa-solid fa-bookmark" />
                                 </NavLink>
                             </button>
                         </div>

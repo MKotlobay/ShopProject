@@ -18,6 +18,16 @@ function Trending({ products, onButtonAdd }) {
     }
   }, [products, currentPage]);
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      nextPage();
+    }, 5000); // Change product every 5 seconds
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [currentPage]); // Run the effect whenever currentPage changes
+
   const nextPage = () => {
     setCurrentPage(prevPage => (prevPage === Math.ceil(products.length / 5) - 1 ? 0 : prevPage + 1));
   };
@@ -44,7 +54,7 @@ function Trending({ products, onButtonAdd }) {
                   <button className="btn border-0 position-absolute top-50 translate-middle-y start-0 ms-4" onClick={prevPage}>
                     <img src="https://www.511tactical.com/static/version1712763960/frontend/511/default/en_US/images/icon-arrow-left.svg" alt="Previous" />
                   </button>
-                  <button className="btn rounded-0" style={{ backgroundColor: '#F8862C' }} onClick={() => { onButtonAdd(product) }}>ADD TO CART</button>
+                  <button className="btn rounded-0" style={{ backgroundColor: '#F8862C' }} onClick={() => onButtonAdd(product)}>ADD TO CART</button>
                 </div>
               </div>
             </div>

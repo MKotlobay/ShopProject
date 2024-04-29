@@ -5,16 +5,16 @@ import Quote from './Quote';
 import GridLayout from './GridLayout';
 import Footer from './Footer';
 
-function Layout() {
+function Layout({onButtonAdd}) {
+
     return (
         <div>
             <Banner />
             <Quote />
-            <GridLayout/>
-            <Footer/>
+            <GridLayout onButtonAdd={onButtonAdd} />
+            <Footer />
         </div>
-
     )
 }
 
-export default Layout
+export default Layout;

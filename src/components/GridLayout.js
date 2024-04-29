@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../style/GridLayout.css';
 import Trending from './Trending';
 
-function GridLayout() {
+function GridLayout({ onButtonAdd }) { 
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -74,7 +74,7 @@ function GridLayout() {
 
             <div className="row p-5">
                 <div className="col text-center">
-                    <Trending products={products} />
+                    <Trending products={products} onButtonAdd={onButtonAdd} />
                 </div>
             </div>
 
